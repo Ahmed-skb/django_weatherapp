@@ -8,10 +8,11 @@
         There was a Error
     {% else %}
         <div class="jumbotron">
-            <h1 class="display-4">{{ api.0.Category.Name }}</h1>
-            <p class="lead">{{ api.0.ReportingArea }} {{ api.0.AQI }}</p>
+            <h1 class="display-4">{{ api.0.Category.Name }} - {{ api.0.AQI }}</h1>
+            <p class="lead">{{ api.0.ReportingArea }} </p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>Add area zipcode to get the air quality.(Only US)</p>
+            <p>It uses <strong>AirNow API</strong> for getting the data</p>
         </div>
     {% endif %}
  {% endif %}
